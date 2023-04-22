@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+  scrollbar-width: none;
+  display: none;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +22,110 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  padding: .9rem;
+  margin-top: .1rem;
+  box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.3);
+  font-family: 'Roboto';
+}
+
+.header h1 {
+  font-size: 1.4rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noteCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+  margin-top: 2rem;
+  width: 21.875rem;
+  height: 15.625rem;
+  box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.4);
+  border-radius: .3rem;
+
+}
+
+.noteCard input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  float: left;
+}
+
+.noteCard textarea {
+  width: 100%;
+  overflow: none;
+  border: none;
+  outline: none;
+  padding: .5rem 1rem;
+  letter-spacing: 1px;
+  line-height: 1.4;
+
+}
+
+.flex1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.icon {
+  box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  float: right;
+}
+
+.card {
+  width: 160px;
+  max-height: 250px;
+  min-height: 200px;
+  overflow-y: scroll;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.4);
+}
+
+.flex-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: .9rem;
+  margin-top: 1rem;
+}
+
+.div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* @media(max-width:600px) {
+
+
+
+} */
